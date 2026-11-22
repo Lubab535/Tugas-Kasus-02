@@ -10,7 +10,7 @@ class BookController extends Controller
 {
     public function index()
     {
-        $books = Book::with('categories')->latest()->get();
+        $books = Book::with('category')->latest()->get();
 
         return view('books.index', compact('books'));
     }

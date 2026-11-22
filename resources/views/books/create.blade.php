@@ -39,7 +39,7 @@
                                     class="form-select @error('category_id') is-invalid @enderror">
                                 <option value="">-- Pilih kategori --</option>
                                 @foreach ($categories as $category)
-                                    <option value="{{ $category->name }}"
+                                    <option value="{{ $category->id }}"
                                         {{ old('category_id') == $category->id ? 'selected' : '' }}>
                                         {{ $category->name }}
                                     </option>

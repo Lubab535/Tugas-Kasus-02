@@ -19,7 +19,7 @@
                         <tr>
                             <td>{{ $book->title }}</td>
                             <td>{{ $book->author }}</td>
-                            <td><span class="badge bg-secondary">{{ $book->category_id }}</span></td>
+                            <td><span class="badge bg-secondary">{{ $book->category->name }}</span></td>
                         </tr>
                     @empty
                         <tr><td colspan="3" class="text-center text-muted py-4">Belum ada buku.</td></tr>
